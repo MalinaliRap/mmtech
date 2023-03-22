@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class ConstantsService {
 
-    readonly apiUrl: string = 'http://webfloat.test/api/v1';
+    readonly apiUrl: string = 'http://localhost/api/v1';
 
   constructor() { }
 }

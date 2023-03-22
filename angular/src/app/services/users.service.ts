@@ -27,7 +27,11 @@ export class UsersService {
     }
 
     public registrar(user): Observable<any>{
-        return this.http.post(`${this.apiUrl}/user/register`,  user);
+        return this.http.post(`${this.apiUrl}/user`,  user);
+    }
+
+    public atualizar(user): Observable<any>{
+        return this.http.put(`${this.apiUrl}/user`,  user);
     }
 
     public logout(){
